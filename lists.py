@@ -1,3 +1,4 @@
+from functions import luxuryFunction
 products = ["Clavier", "Souris", "Ecran", "Chaise", "Bureau", "Lamp"]
 prices = [45, 150, 1200, 855, 2000, 25]
 
@@ -9,3 +10,4 @@ filtered_products_list = list(filtered_products)
 
 products_price_string_list = list(map(lambda item: f"{item[0]} coute {item[1]} DH", products_prices))
 
+luxury_products = list(map(luxuryFunction, products_prices))
